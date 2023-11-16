@@ -1,0 +1,91 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {color: white;background: #aa4af0;}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#151515;border-radius:50px}
+::-webkit-scrollbar-thumb:hover{background:#2d2d2d}
+
+body, html {
+    font-family: 'Inter', sans-serif; 
+    background-color: black;
+    overflow-x: hidden;
+}
+
+i {
+    margin-right: 4px;
+}
+
+.gradient {
+    border-width: 1px;
+    border-image: linear-gradient(to right, transparent 10%, #b4b4b455 ,transparent 90%) 0 0 1 0;
+}
+
+.max-content {
+    width: max-content;
+}
+
+@keyframes jumbo {
+    from {
+        background-position: 50% 50%, 50% 50%;
+    }
+    to {
+        background-position: 350% 50%, 350% 50%;
+    }
+}
+
+.jumbo {
+    --stripes: repeating-linear-gradient(
+        100deg,
+        #fff 0%,
+        #b9ffa5 7%,
+        transparent 12%,
+        transparent 14%,
+        #fff 16%
+    );
+    --stripesDark: repeating-linear-gradient(
+        420deg,
+        #000 0%,
+        #000 7%,
+        transparent 10%,
+        transparent 12%,
+        #000 16%
+    );
+    --rainbow: repeating-linear-gradient(
+        100deg,
+        #7321c5 10%,
+        #9432db 15%,
+        #49a7ff 35%,
+        #2ce76b 40%,
+        #386AD6 50%
+    );
+    background-image: var(--stripes), var(--rainbow);
+    background-size: 200%, 500%;
+    background-position: 50% 50%, 50% 50%;
+    filter: blur(18px) invert(100%);
+
+    mask-image: radial-gradient(ellipse at 80% 20%, black 0%, transparent 70%);
+
+    pointer-events: none;
+}
+
+.jumbo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--stripes), var(--rainbow);
+    background-size: 200%, 100%;
+    animation: jumbo 75s linear infinite;
+    background-attachment: fixed;
+    mix-blend-mode: difference;
+}
+
+
+.dark .jumbo::after {
+    background-image: var(--stripesDark), var(--rainbow);
+}
