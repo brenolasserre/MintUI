@@ -1,4 +1,9 @@
-const Button = (props) => {
+interface ButtonProps {
+    styling: 'primary' | 'secondary' | 'ghost' | 'dark';
+    children: React.ReactNode; // Assuming 'children' will be used to pass content inside the button
+}
+
+const Button = (props: ButtonProps) => {
     const content = props.children
     const styling = props.styling
     

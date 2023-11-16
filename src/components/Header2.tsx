@@ -24,7 +24,7 @@ const Header = () => {
           </p>
           {/* CTA */}
           <div className="flex items-center mt-8">
-            <Button>Get Started</Button>
+            <Button styling="primary">Get Started</Button>
             <Button styling='ghost'><i className="bi bi-github"></i> Github</Button>
           </div>
       </div>
