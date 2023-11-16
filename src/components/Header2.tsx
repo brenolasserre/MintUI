@@ -23,7 +23,7 @@ const Header = () => {
             Beautifully designed components. Customizable, Accessible, Open-Source and Free Forever.
           </p>
           {/* CTA */}
-          <div className="flex items-center mt-8">
+          <div className="flex items-center justify-center gap-x-4 mt-8">
             <Button styling="primary">Get Started</Button>
             <Button styling='ghost'><i className="bi bi-github"></i> Github</Button>
           </div>
