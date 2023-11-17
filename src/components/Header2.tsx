@@ -9,13 +9,9 @@ const Header = () => {
               <div className="jumbo absolute -inset-[10px] opacity-50"></div>
           </div>
           {/* Pill */}
-          <a className="mb-8 relative flex flex-row items-center justify-center rounded-2xl px-4 py-1.5 text-sm shadow-[inset_0_-10px_10px_#a950ff36] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-6px_10px_#a950ff36]" href="/">🎉  
-            <span className="animate-gradient bg-gradient-to-r from-[#aa4af0] via-[#d358e0] to-[#aa4af0] ml-2 bg-clip-text text-transparent">
-              Building in Public
-            </span> 
-          <div className="absolute h-full w-full bg-gradient-to-r from-[#b942d6]/50 via-[#9c40ff]/50 to-[#386ad6]/50 bg-[length:var(--bg-size)_100%] p-[1px] [border-radius:inherit] [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] [--webkit-mask-composite:xor] [mask-composite:xor]"></div>
+          <a className="bg-[#c35dd810] mb-4 flex items-center hover:bg-[#c35dd830] text-sm md:text-md 2xl:text-md text-[#b95bc4] px-4 py-1.5 transition-all  ease-in-out duration-300 rounded-full shadow-inner shadow-[#cf79e970] border border-[#b749d3b9] z-10" href="/">
+            🎉 Building in Public         
           </a>
-          
           <h1 className="relative flex items-center justify-center text-5xl sm:text-6xl font-bold text-zinc-100 transition-colors w-2/3 sm:w-[52%] text-center">
             Building Stunning Websites Made Easy
           </h1>
