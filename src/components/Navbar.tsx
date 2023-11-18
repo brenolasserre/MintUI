@@ -5,7 +5,7 @@ const Navbar = () => {
         <a href="/">
         <h1 className="flex items-center text-2xl font-bold text-zinc-200 transition-colors">
               breno
-              <span className="ml-[.25em] rounded-md bg-zinc-200 text-sm p-1 leading-none">
+              <span className="ml-[.25em] rounded-md bg-[#0F6AEC] text-sm p-1 leading-none">
                   <span className="text-black">UI</span>
               </span>
           </h1>

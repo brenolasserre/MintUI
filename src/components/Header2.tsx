@@ -9,8 +9,8 @@ const Header = () => {
               <div className="jumbo absolute -inset-[10px] opacity-50"></div>
           </div>
           {/* Pill */}
-          <a className="bg-[#c35dd810] mb-4 flex items-center hover:bg-[#c35dd830] text-sm md:text-md 2xl:text-md text-[#b95bc4] px-4 py-1.5 transition-all  ease-in-out duration-300 rounded-full shadow-inner shadow-[#cf79e970] border border-[#b749d3b9] z-10" href="/">
-            🎉 Building in Public         
+          <a className="bg-[#c35dd810] mb-4 flex items-center hover:bg-[#c35dd830] text-sm md:text-md 2xl:text-md text-[#0F6AEC] px-4 py-1.5 transition-all  ease-in-out duration-300 rounded-full shadow-inner shadow-[#0F6AEC] border border-[#0F6AEC] z-10" href="/">
+            Building in Public         
           </a>
           <h1 className="relative flex items-center justify-center text-5xl sm:text-6xl font-bold text-zinc-100 transition-colors w-2/3 sm:w-[52%] text-center">
             Building Stunning Websites Made Easy
