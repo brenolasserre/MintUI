@@ -1,6 +1,8 @@
 import Button from "./Button";
 
 const Header = () => {
+
+
     return ( 
     <div>
       <div className="relative flex flex-col h-[100vh] items-center justify-center bg-black transition-bg">
@@ -9,9 +11,10 @@ const Header = () => {
               <div className="jumbo absolute -inset-[10px] opacity-50"></div>
           </div>
           {/* Pill */}
-          <a className="bg-[#c35dd810] mb-4 flex items-center hover:bg-[#c35dd830] text-sm md:text-md 2xl:text-md text-[#0F6AEC] px-4 py-1.5 transition-all  ease-in-out duration-300 rounded-full shadow-inner shadow-[#0F6AEC] border border-[#0F6AEC] z-10" href="/">
+          <a className="bg-[#0f6bec17] mb-4 flex items-center hover:bg-[#0f6bec3f] text-sm md:text-md 2xl:text-md text-[var(--blue)] px-4 py-1.5 transition-all  ease-in-out duration-300 rounded-full shadow-inner shadow-[var(--blue)] border border-[var(--blue)] z-10" href="/">
             Building in Public         
           </a>
+          
           <h1 className="relative flex items-center justify-center text-5xl sm:text-6xl font-bold text-zinc-100 transition-colors w-2/3 sm:w-[52%] text-center">
             Building Stunning Websites Made Easy
           </h1>
@@ -21,7 +24,7 @@ const Header = () => {
           {/* CTA */}
           <div className="flex items-center justify-center gap-x-4 mt-8">
             <Button styling="primary">Get Started</Button>
-            <Button styling='ghost'><i className="bi bi-github"></i> Github</Button>
+            <Button styling="ghost"><i className="bi bi-github"></i> Github</Button>
           </div>
       </div>
   </div>

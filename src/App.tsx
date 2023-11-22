@@ -1,7 +1,9 @@
 import NavBar from './components/Navbar'
-import Header2 from './components/Header2'
+import Header from './components/Header'
 import './index.css'
+import Newsletter from './components/Newsletter'
 import Bento from './components/Bento'
+
 
 function App() {
 
@@ -9,10 +11,11 @@ function App() {
     <>
       <NavBar />
     
-      <Header2 />      
+      <Header />      
       
-      <main className='flex justify-center mb-12'>
+      <main className='mb-12 w-4/5 mx-auto'>
         <Bento />
+        <Newsletter />
       </main>
     </>
   )

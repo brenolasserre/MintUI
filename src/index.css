@@ -5,11 +5,17 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection {color: white;background: #aa4af0;}
+::selection {color: white;background: var(--blue);}
 ::-webkit-scrollbar{width:8px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:#151515;border-radius:50px}
 ::-webkit-scrollbar-thumb:hover{background:#2d2d2d}
+
+:root {
+    --blue: #40d081;   
+    /* blue 0F6AEC */
+    caret-color: var(--blue);
+}
 
 body, html {
     font-family: 'Inter', sans-serif; 
@@ -50,10 +56,13 @@ i {
     );
     --rainbow: repeating-linear-gradient(
         100deg,
-        #5732db 15%,
-        #0F6AEC 35%,
+        #32dbb4 15%,
+        /* 5732db */
+        #22abc3 35%,
+        /* 0F6AEC */
         #2ce76b 40%,
-        #386AD6 50%
+        rgb(47, 116, 79) 50%
+        /* 386AD6 */
     );
     background-image: var(--stripes), var(--rainbow);
     filter: blur(18px);
@@ -67,5 +76,5 @@ i {
     inset: 0;
     background-image: var(--stripes), var(--rainbow);
     background-size: 300%, 100%;
-    animation: jumbo 75s linear infinite;
+    animation: jumbo 100s linear infinite;
 }
