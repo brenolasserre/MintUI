@@ -1,9 +1,8 @@
 import NavBar from './components/Navbar'
 import Header from './components/Header'
 import './index.css'
-import Newsletter from './components/Newsletter'
-import Bento from './components/Bento'
-
+// import Newsletter from './components/Newsletter'
+// import Bento from './components/Bento'
 
 function App() {
 
@@ -13,10 +12,10 @@ function App() {
     
       <Header />      
       
-      <main className='mb-12 w-4/5 mx-auto'>
+      {/* <main className='mb-12 w-4/5 mx-auto'>
         <Bento />
         <Newsletter />
-      </main>
+      </main> */}
     </>
   )
 }
